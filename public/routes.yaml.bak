@@ -1,0 +1,9 @@
+routes:
+  - path: "/"
+  - path: "/biography"
+  - path: "/shows"
+  - path: "/music"
+  - path: "/videos"
+  - path: "/contact"
+  - path: "/imprint"
+
