@@ -4,7 +4,7 @@ import { useLanguage } from "../contexts/LanguageContext";
 export default function Videos() {
     const { language, languageData } = useLanguage();
     const pageTitle =
-        languageData?.languages[language].pages.videos?.title ||
+        languageData?.languages[language]?.pages.videos?.title ||
         "Videos | ago · new wave/electronica · stuttgart";
 
     const videos = [

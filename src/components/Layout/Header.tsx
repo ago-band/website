@@ -15,7 +15,7 @@ export default function Header() {
         }
 
         const pageKey = location === "/" ? "home" : location.slice(1);
-        return languageData.languages[language].navigation[pageKey] || pageKey;
+        return languageData.languages[language]?.navigation[pageKey] || pageKey;
     };
 
     const toggleLanguage = () => {

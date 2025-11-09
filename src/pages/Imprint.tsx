@@ -1,27 +1,35 @@
-import { Helmet } from 'react-helmet-async'
-import { useLanguage } from '../contexts/LanguageContext'
+import { Helmet } from "react-helmet-async";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Imprint() {
-  const { language, languageData } = useLanguage()
-  const pageTitle = languageData?.languages[language].pages.imprint?.title || 
-                    "Imprint | ago · new wave/electronica · stuttgart"
-  return (
-    <>
-      <Helmet>
-        <title>{pageTitle}</title>
-        <meta name="description" content="Legal notice and privacy policy for ago-band.info" />
-      </Helmet>
-      <article className="post page type-page status-publish hentry">
-        <div className="post-content clearfix">
-          <div className="entry-content clearfix">
-            <div className="imprint-content">
-              <div dangerouslySetInnerHTML={{ __html: imprintHTML }} />
-            </div>
-          </div>
-        </div>
-      </article>
-    </>
-  )
+    const { language, languageData } = useLanguage();
+    const pageTitle =
+        languageData?.languages[language]?.pages.imprint?.title ||
+        "Imprint | ago · new wave/electronica · stuttgart";
+    return (
+        <>
+            <Helmet>
+                <title>{pageTitle}</title>
+                <meta
+                    name="description"
+                    content="Legal notice and privacy policy for ago-band.info"
+                />
+            </Helmet>
+            <article className="post page type-page status-publish hentry">
+                <div className="post-content clearfix">
+                    <div className="entry-content clearfix">
+                        <div className="imprint-content">
+                            <div
+                                dangerouslySetInnerHTML={{
+                                    __html: imprintHTML,
+                                }}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </>
+    );
 }
 
 const imprintHTML = `
@@ -59,5 +67,4 @@ Website: http://www.ago-band.info</span></p>
 Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke
 </a>
 </p>
-`
-
+`;

@@ -1,10 +1,31 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { copyFileSync } from "fs";
+import { copyFileSync, existsSync } from "fs";
 import { resolve } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
+
+const yamlFiles = [
+    { src: "src/data/routes.yaml", dest: "public/routes.yaml" },
+    { src: "src/data/shows.yaml", dest: "public/shows.yaml" },
+    { src: "src/data/language.yaml", dest: "public/language.yaml" },
+    { src: "src/data/music.yaml", dest: "public/music.yaml" },
+];
+
+function copyYamlFiles() {
+    yamlFiles.forEach(({ src, dest }) => {
+        const srcPath = resolve(__dirname, src);
+        const destPath = resolve(__dirname, dest);
+        if (existsSync(srcPath)) {
+            try {
+                copyFileSync(srcPath, destPath);
+            } catch (err) {
+                console.error(`Error copying ${src} to ${dest}:`, err);
+            }
+        }
+    });
+}
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,22 +35,29 @@ export default defineConfig({
             name: "copy-yaml",
             buildStart() {
                 // Copy YAML files to public during build
-                try {
-                    copyFileSync(
-                        resolve(__dirname, "src/data/routes.yaml"),
-                        resolve(__dirname, "public/routes.yaml")
-                    );
-                    copyFileSync(
-                        resolve(__dirname, "src/data/shows.yaml"),
-                        resolve(__dirname, "public/shows.yaml")
-                    );
-                    copyFileSync(
-                        resolve(__dirname, "src/data/language.yaml"),
-                        resolve(__dirname, "public/language.yaml")
-                    );
-                } catch (err) {
-                    // Ignore errors in dev mode
-                }
+                copyYamlFiles();
+            },
+            configureServer(server) {
+                // Watch YAML files and copy them when they change
+                yamlFiles.forEach(({ src }) => {
+                    const srcPath = resolve(__dirname, src);
+                    server.watcher.add(srcPath);
+                });
+
+                server.watcher.on("change", (file) => {
+                    const changedFile = yamlFiles.find(({ src }) => {
+                        const srcPath = resolve(__dirname, src);
+                        return file === srcPath;
+                    });
+
+                    if (changedFile) {
+                        copyYamlFiles();
+                        // Trigger a reload of the affected YAML file
+                        server.ws.send({
+                            type: "full-reload",
+                        });
+                    }
+                });
             },
         },
     ],

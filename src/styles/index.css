@@ -30,13 +30,13 @@ body.sidebar-visible {
 }
 
 /* Language switching */
-.lang-de {
+/* .lang-de {
     display: none;
 }
 
 .lang-en {
     display: block;
-}
+} */
 
 body.lang-de .lang-de {
     display: block;
@@ -145,6 +145,7 @@ li {
 .content-area {
     transition: 0.3s opacity ease;
     box-sizing: border-box;
+    padding-bottom: 10rem;
     margin: 0 auto;
     width: 100%;
 }
@@ -421,7 +422,9 @@ body.home .sidebar-navigation-toggle:active {
     height: 100%;
     opacity: 0;
     transform: translateX(-30px);
-    transition: 0.3s opacity ease-out, 0.3s transform ease-out;
+    transition:
+        0.3s opacity ease-out,
+        0.3s transform ease-out;
     overflow-y: auto;
     box-sizing: border-box;
 }
@@ -684,6 +687,13 @@ article p:last-child {
     margin-bottom: 0;
 }
 
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
 /* Biography */
 .biography-content {
     display: flex;
@@ -691,22 +701,8 @@ article p:last-child {
     gap: 2.5rem;
 }
 
-.biography-content.two-column-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    align-items: start;
-}
-
 .biography-image {
     width: 100%;
-}
-
-.shows-content.two-column-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    align-items: start;
 }
 
 .shows-image {
@@ -735,13 +731,9 @@ article p:last-child {
 }
 
 /* Music/Videos */
-.music-content article {
-    margin-bottom: 3rem;
-}
-
-.music-content .widget-title {
+.widget-title {
     margin-bottom: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: 600;
 }
 
@@ -751,6 +743,55 @@ article p:last-child {
 
 .music-content .textwidget iframe {
     margin-bottom: 1rem;
+}
+
+/* Release Component */
+.release-item {
+    margin-bottom: 2rem;
+}
+
+.release-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.release-image {
+    width: 100%;
+}
+
+.release-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.release-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.release-embed {
+    width: 100%;
+}
+
+.release-embed iframe {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.release-text {
+    width: 100%;
+}
+
+.release-text p {
+    margin-bottom: 1rem;
+}
+
+.release-text p:last-child {
+    margin-bottom: 0;
 }
 
 .video-wrapper {
@@ -840,12 +881,12 @@ article p:last-child {
         gap: 2rem;
     }
 
-    .biography-content.two-column-layout {
+    .two-column-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .shows-content.two-column-layout {
+    .release-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }

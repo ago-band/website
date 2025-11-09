@@ -4,7 +4,7 @@ import { useLanguage } from "../contexts/LanguageContext";
 export default function Contact() {
     const { language, languageData } = useLanguage();
     const pageTitle =
-        languageData?.languages[language].pages.contact?.title ||
+        languageData?.languages[language]?.pages.contact?.title ||
         "Contact | ago · new wave/electronica · stuttgart";
 
     return (
@@ -22,7 +22,9 @@ export default function Contact() {
                         <div className="contact-content ago__contact-details">
                             <div className="contact-section">
                                 <div className="lang-en">
-                                    <h3 className="widget-title">contact + booking</h3>
+                                    <h3 className="widget-title">
+                                        contact + booking
+                                    </h3>
                                     <div className="textwidget">
                                         <p className="p1">
                                             <a href="mailto:mail@ago-band.info">
@@ -32,7 +34,9 @@ export default function Contact() {
                                     </div>
                                 </div>
                                 <div className="lang-de">
-                                    <h3 className="widget-title">kontakt + booking</h3>
+                                    <h3 className="widget-title">
+                                        kontakt + booking
+                                    </h3>
                                     <div className="textwidget">
                                         <p className="p1">
                                             <a href="mailto:mail@ago-band.info">
@@ -46,19 +50,35 @@ export default function Contact() {
                                 <h3 className="widget-title">socials</h3>
                                 <div className="textwidget">
                                     <p className="p1">
-                                        <a href="https://ago-band.bandcamp.com/" target="_blank" rel="noopener">
+                                        <a
+                                            href="https://ago-band.bandcamp.com/"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
                                             bandcamp
                                         </a>
                                         <br />
-                                        <a href="https://soundcloud.com/ago-music" target="_blank" rel="noopener">
+                                        <a
+                                            href="https://soundcloud.com/ago-music"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
                                             soundcloud
                                         </a>
                                         <br />
-                                        <a href="https://www.instagram.com/ago_band" target="_blank" rel="noopener">
+                                        <a
+                                            href="https://www.instagram.com/ago_band"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
                                             instagram
                                         </a>
                                         <br />
-                                        <a href="https://www.facebook.com/ago.band.music" target="_blank" rel="noopener">
+                                        <a
+                                            href="https://www.facebook.com/ago.band.music"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
                                             facebook
                                         </a>
                                     </p>

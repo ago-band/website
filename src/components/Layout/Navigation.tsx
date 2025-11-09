@@ -202,7 +202,7 @@ export function NavigationSidebar() {
                                         : route.path.slice(1);
                                 const label =
                                     languageData?.languages[language]
-                                        .navigation[routeKey] || route.path;
+                                        ?.navigation[routeKey] || route.path;
                                 const isActive = location === route.path;
 
                                 return (

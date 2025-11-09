@@ -1,11 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../contexts/LanguageContext";
-import SocialLinks from "../components/SocialLinks";
 
 export default function Biography() {
     const { language, languageData } = useLanguage();
     const pageTitle =
-        languageData?.languages[language].pages.biography?.title ||
+        languageData?.languages[language]?.pages.biography?.title ||
         "Biography | ago · new wave/electronica · stuttgart";
 
     return (
@@ -89,9 +88,6 @@ export default function Biography() {
                                         an advancing process of dynamics, depth
                                         and space-filling sound.
                                     </p>
-                                </div>
-                                <div className="biography-socials">
-                                    <SocialLinks />
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,125 @@
+releases:
+    - id: chroma
+      year: 2021
+      title: chroma
+      image: /assets/images/chroma.jpg
+      spotifyUrl: https://open.spotify.com/embed/album/3wwdsrXrjN2cARxzhW5FMI
+      embedHeight: 390px
+      languages:
+          en:
+              description: |
+                  Our debut album "chroma", released digitally on July 23, 2021 and on vinyl on December 23, 2021. it features [meike boltersdorf](https://www.meikeboltersdorf.com/), [dmitry polykov](https://dontrepeatyourself.bandcamp.com/music) and nursel kale. produced by ralv milberg at [milberg studios](http://www.milbergstudios.de/). additional mixing and mastering by maximilian heinrich.
+              buyLink:
+                  text: buy/order it here
+                  url: https://ago-band.bandcamp.com/
+          de:
+              description: |
+                  Unser Debütalbum "chroma", digital veröffentlicht am 23. Juli 2021 und auf Vinyl am 23. Dezember 2021. Es enthält [meike boltersdorf](https://www.meikeboltersdorf.com/), [dmitry polykov](https://dontrepeatyourself.bandcamp.com/music) und nursel kale. produziert von ralv milberg bei [milberg studios](http://www.milbergstudios.de/). zusätzliches mixing und mastering von maximilian heinrich.
+              buyLink:
+                  text: hier kaufen/bestellen
+                  url: https://ago-band.bandcamp.com/
+    - id: montreal
+      year: 2021
+      title: montreal
+      image: /assets/images/montreal.png
+      spotifyUrl: https://open.spotify.com/embed/album/0DBaidJu3gp8RQ6EJKLxbQ
+      embedHeight: 86px
+      languages:
+          en:
+              description: |
+                  montreal (feat. nursel kale) is the third and last single of our debut album "chroma".
+              additionalInfo: |
+                  mixed and mastered at [milberg studios by ralv milberg](http://www.milbergstudios.de/) and maximilian heinrich.
+          de:
+              description: |
+                  montreal (feat. nursel kale) ist die dritte und letzte Single unseres Debütalbums "chroma".
+              additionalInfo: |
+                  gemischt und gemastert bei [milberg studios von ralv milberg](http://www.milbergstudios.de/) und maximilian heinrich.
+    - id: glowing
+      year: 2021
+      title: glowing
+      image: /assets/images/glowing.jpg
+      spotifyUrl: https://open.spotify.com/embed/track/6yOCtV6Pux5QxOkgXoAiz3
+      embedHeight: 86px
+      languages:
+          en:
+              description: |
+                  glowing (feat. [meike boltersdorf](https://www.meikeboltersdorf.com/)) is the second single of our debut album "chroma".
+              additionalInfo: |
+                  mixed and mastered at [milberg studios by ralv milberg](http://www.milbergstudios.de/) and maximilian heinrich.
+          de:
+              description: |
+                  glowing (feat. [meike boltersdorf](https://www.meikeboltersdorf.com/)) ist die zweite Single unseres Debütalbums "chroma".
+              additionalInfo: |
+                  gemischt und gemastert bei [milberg studios von ralv milberg](http://www.milbergstudios.de/) und maximilian heinrich.
+    - id: falling
+      year: 2020
+      title: falling
+      image: /assets/images/falling.jpg
+      spotifyUrl: https://open.spotify.com/embed/track/3n2rxMFlCX0fLuaN7ALIAi
+      embedHeight: 86px
+      languages:
+          en:
+              description: |
+                  falling (feat. [dmitry polykov](https://dontrepeatyourself.bandcamp.com/music)) is the first single of our debut album "chroma".
+          de:
+              description: |
+                  falling (feat. [dmitry polykov](https://dontrepeatyourself.bandcamp.com/music)) ist die erste Single unseres Debütalbums "chroma".
+    - id: blessed
+      year: 2019
+      title: Blessed
+      image: /assets/images/blessed.jpg
+      spotifyUrl: https://open.spotify.com/embed/playlist/41QrPfwlBwlvNk8Z2eynXL
+      embedHeight: 152px
+      languages:
+          en:
+              description: |
+                  BLESSED is a music project by [Dmitry Polykov](https://www.facebook.com/dmitrypolykovofficial/) from Tel Aviv (known as singer in the israeli dark shamanic pop-band D.R.Y.) and Robin Wörn & Manuel Minniti of the synth wave-band ago from Stuttgart, Germany. After touring together in Israel, they did two short recording sessions at [Mazkeka Studios Jerusalem](https://www.mazkeka.com/studio) in February 2019. As a result they came up with three tracks, which were released on 22nd October 2019 on the experimental label [Raash Records](https://raashrecords.bandcamp.com/) from Jerusalem (raash, hebrew for „noise“). These three tracks, which are in english, russian and hebrew language, combine the engaging, calm and gloomy way of Polykovs voice with minimalistic, drifting rhythms and subtle synth-melodies of ago.
+                  BLESSED comes out on 7“ light blue vinyl.
+              buyLink:
+                  text: "Buy at: raash records"
+                  url: https://raashrecords.bandcamp.com/album/raash-002
+          de:
+              description: |
+                  BLESSED ist ein Musikprojekt von [Dmitry Polykov](https://www.facebook.com/dmitrypolykovofficial/) aus Tel Aviv (bekannt als Sänger der israelischen dark shamanic pop-band D.R.Y.) und Robin Wörn & Manuel Minniti von der Synth Wave-Band ago aus Stuttgart, Deutschland. Nach gemeinsamen Touren in Israel nahmen sie im Februar 2019 zwei kurze sessions in den [Mazkeka Studios Jerusalem](https://www.mazkeka.com/studio) auf. Als Ergebnis entstanden drei Tracks, die am 22. Oktober 2019 auf dem experimentellen Label [Raash Records](https://raashrecords.bandcamp.com/) aus Jerusalem veröffentlicht wurden (raash, hebräisch für „Lärm"). Diese drei Tracks, die in englischer, russischer und hebräischer Sprache sind, verbinden die mitreißende, ruhige und düstere Art von Polykovs Stimme mit minimalistischen, treibenden Rhythmen und subtilen Synth-Melodien von ago.
+                  BLESSED erscheint auf 7" hellblauem Vinyl.
+              buyLink:
+                  text: "Kaufen bei: raash records"
+                  url: https://raashrecords.bandcamp.com/album/raash-002
+    - id: sun
+      year: 2018
+      title: sun
+      image: /assets/images/sun.jpg
+      spotifyUrl: https://open.spotify.com/embed/album/3BxrwtTvkdOPCxm5rbnR2L
+      embedHeight: 152px
+      languages:
+          en:
+              description: |
+                  a — sun
+                  b — luzifer
+
+                  vinyl + digital:
+                  [bandcamp](https://bit.ly/2kk9Sp4) (limited 12″ vinyl) + downloadcode
+
+                  digital:
+                  [spotify](https://spoti.fi/2IHWJk4)
+                  [iTunes & Apple Music](https://apple.co/2KLcmI2)
+                  [amazon](https://amzn.to/2x3QdTg)
+                  [soundcloud](https://bit.ly/2s7gz0W)
+
+                  all tracks written, produced and arranged by manuel minniti and robin wörn, co-produced with felix schäfer. mastering by [moritz illner at duophonic](https://duophonic.de/).
+          de:
+              description: |
+                  a — sun
+                  b — luzifer
+
+                  vinyl + digital:
+                  [bandcamp](https://bit.ly/2kk9Sp4) (limitierte 12″ Vinyl) + Downloadcode
+
+                  digital:
+                  [spotify](https://spoti.fi/2IHWJk4)
+                  [iTunes & Apple Music](https://apple.co/2KLcmI2)
+                  [amazon](https://amzn.to/2x3QdTg)
+                  [soundcloud](https://bit.ly/2s7gz0W)
+
+                  alle tracks geschrieben, produziert und arrangiert von manuel minniti und robin wörn, co-produziert mit felix schäfer. mastering von [moritz illner bei duophonic](https://duophonic.de/).
