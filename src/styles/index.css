@@ -654,6 +654,10 @@ body.home #footer {
     margin: 0 auto;
 }
 
+.videos-content {
+    max-width: 800px;
+}
+
 article {
     margin-bottom: 3rem;
 }
@@ -731,6 +735,24 @@ article p:last-child {
 }
 
 /* Music/Videos */
+.music-content article {
+    margin-bottom: 3rem;
+}
+
+.music-content .widget-title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.music-content .textwidget {
+    margin-top: 1rem;
+}
+
+.music-content .textwidget iframe {
+    margin-bottom: 1rem;
+}
+
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -752,12 +774,25 @@ article p:last-child {
     text-align: center;
 }
 
+.ago__contact-details {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
 .contact-section {
     margin-bottom: 3rem;
 }
 
 .contact-section h3 {
     margin-bottom: 1rem;
+}
+
+.contact-section .textwidget {
+    margin-top: 1rem;
+}
+
+.contact-section .textwidget p.p1 {
+    line-height: 1.8;
 }
 
 /* Imprint */
