@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 
 const TOTAL_IMAGES = 30;
-const IMAGES_PATH = "/assets/images/random-visuals";
 
 export default function RandomVisuals() {
     useEffect(() => {
@@ -13,7 +12,8 @@ export default function RandomVisuals() {
             randomImageIndex < 10
                 ? `0${randomImageIndex}`
                 : randomImageIndex.toString();
-        const randomImageUrl = `${IMAGES_PATH}/ago-random-visual_${randomImageIndexFormatted}.jpg`;
+        const baseUrl = import.meta.env.BASE_URL;
+        const randomImageUrl = `${baseUrl}assets/images/random-visuals/ago-random-visual_${randomImageIndexFormatted}.jpg`;
 
         backgroundEl.style.backgroundImage = `url(${randomImageUrl})`;
         backgroundEl.style.backgroundSize = "cover";

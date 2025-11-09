@@ -60,11 +60,17 @@ function AppContent() {
 }
 
 function App() {
+    // Handle base path for wouter
+    // In development, BASE_URL is "/", so we use "" (empty) for root
+    // In production with subdirectory, BASE_URL is "/website/", so we use "/website"
+    const baseUrl = import.meta.env.BASE_URL;
+    const basePath = baseUrl === "/" ? "" : baseUrl.replace(/\/$/, "");
+
     return (
         <LanguageProvider>
             <NavigationProvider>
                 <div className="app">
-                    <Router>
+                    <Router base={basePath}>
                         <AppContent />
                     </Router>
                 </div>

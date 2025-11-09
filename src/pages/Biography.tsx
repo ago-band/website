@@ -18,7 +18,10 @@ export default function Biography() {
             </Helmet>
             <div className="biography-content two-column-layout">
                 <div className="biography-image">
-                    <img src="/assets/images/ago_02_web.jpg" alt="ago band" />
+                    <img
+                        src={`${import.meta.env.BASE_URL}assets/images/ago_02_web.jpg`}
+                        alt="ago band"
+                    />
                 </div>
                 <div className="biography-text">
                     <div className="lang-de">

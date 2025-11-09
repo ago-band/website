@@ -75,11 +75,16 @@ export default function Release({ release }: ReleaseProps) {
     const { language } = useLanguage();
     const content = release.languages[language];
 
+    // Prepend base URL to image path if it starts with /
+    const imageUrl = release.image.startsWith("/")
+        ? `${import.meta.env.BASE_URL}${release.image.slice(1)}`
+        : release.image;
+
     return (
         <article className="release-item">
             <div className="release-content two-column-layout">
                 <div className="release-image">
-                    <img src={release.image} alt={release.title} />
+                    <img src={imageUrl} alt={release.title} />
                 </div>
                 <div className="release-details">
                     <h3 className="widget-title">

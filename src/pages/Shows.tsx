@@ -51,7 +51,7 @@ export default function Shows() {
                         <div className="shows-content two-column-layout">
                             <div className="shows-image">
                                 <img
-                                    src="/assets/images/224298807_1257045991419536_391705679237384012_n-e1627328688953.jpg"
+                                    src={`${import.meta.env.BASE_URL}assets/images/224298807_1257045991419536_391705679237384012_n-e1627328688953.jpg`}
                                     alt="ago shows"
                                 />
                             </div>
