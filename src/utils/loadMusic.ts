@@ -31,7 +31,8 @@ export interface MusicData {
 export async function loadMusic(): Promise<Release[]> {
     try {
         // Try public folder first (for production), then src (for development)
-        let response = await fetch("/music.yaml");
+        const baseUrl = import.meta.env.BASE_URL;
+        let response = await fetch(`${baseUrl}music.yaml`);
         if (!response.ok) {
             response = await fetch("/src/data/music.yaml");
         }

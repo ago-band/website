@@ -22,7 +22,8 @@ const defaultRoutes: Route[] = [
 export async function loadRoutes(): Promise<Route[]> {
     try {
         // Try public folder first (for production), then src (for development)
-        let response = await fetch("/routes.yaml");
+        const baseUrl = import.meta.env.BASE_URL;
+        let response = await fetch(`${baseUrl}routes.yaml`);
         if (!response.ok) {
             response = await fetch("/src/data/routes.yaml");
         }

@@ -22,7 +22,8 @@ export async function loadLanguage(): Promise<LanguageData> {
 
     try {
         // Try public folder first (for production), then src (for development)
-        let response = await fetch("/language.yaml");
+        const baseUrl = import.meta.env.BASE_URL;
+        let response = await fetch(`${baseUrl}language.yaml`);
         if (!response.ok) {
             response = await fetch("/src/data/language.yaml");
         }
