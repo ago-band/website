@@ -61,7 +61,10 @@ export default defineConfig({
             },
         },
     ],
-    base: "/",
+    // Use environment variable for base path, default to "/"
+    // For GitHub Pages subdirectory: "/repository-name/"
+    // For custom domain or username.github.io: "/"
+    base: process.env.VITE_BASE_PATH || "/",
     build: {
         outDir: "dist",
         assetsDir: "assets",

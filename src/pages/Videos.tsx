@@ -45,11 +45,7 @@ export default function Videos() {
                                             frameBorder="0"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                             allowFullScreen
-                                            title={
-                                                language === "en"
-                                                    ? video.titleEn
-                                                    : video.titleDe
-                                            }
+                                            title="Video"
                                         />
                                     </div>
                                 </article>
