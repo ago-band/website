@@ -34,9 +34,8 @@ jobs:
               run: bun run build
               env:
                   # Set base path for GitHub Pages
-                  # For repository "ago-band/website", it will be deployed to /
-                  # Change to "/" if using custom domain or username.github.io
-                  VITE_BASE_PATH: "/"
+                  # Change to "/" when using a custom domain or username.github.io
+                  VITE_BASE_PATH: "/website/"
 
             - name: Setup Pages
               uses: actions/configure-pages@v4
