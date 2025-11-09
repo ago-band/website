@@ -80,24 +80,11 @@ export default function Navigation() {
             document.body.classList.remove("sidebar-visible");
             menu.classList.remove("is-visible");
 
-            // Wait for opacity transition to end before moving off-screen
-            // const handleTransitionEnd = (event: TransitionEvent) => {
-            //     // Only handle opacity transition, ignore transform transitions
-            //     if (event.propertyName === "opacity") {
             menu.style.right = "-9999px";
             menu.style.zIndex = "-1";
             content.style.height = "auto";
             content.style.overflow = "visible";
             setIsAnimating(false);
-            //         menu.removeEventListener(
-            //             "transitionend",
-            //             handleTransitionEnd
-            //         );
-            //     }
-            // };
-            // menu.addEventListener("transitionend", handleTransitionEnd, {
-            //     once: true,
-            // });
         }
     };
 

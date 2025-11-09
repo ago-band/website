@@ -16,84 +16,103 @@ export default function Biography() {
                     content="ago is a new wave/electronica band from stuttgart (germany), consisting of robin wörn and manuel minniti."
                 />
             </Helmet>
-            <article className="post page type-page status-publish hentry">
-                <div className="post-content clearfix">
-                    <div className="entry-content clearfix">
-                        <div className="biography-content two-column-layout">
-                            <div className="biography-image">
-                                <img
-                                    src="/assets/images/ago_02_web.jpg"
-                                    alt="ago band"
-                                />
-                            </div>
-                            <div className="biography-text">
-                                <div className="lang-de">
-                                    <p>
-                                        ago ist ein Musikprojekt von Robin Wörn
-                                        und Manuel Minniti aus Stuttgart, das
-                                        seit 2015 besteht. Live wird die Band
-                                        regelmäßig durch Gastmusiker*innen
-                                        ergänzt.
-                                    </p>
-                                    <p>
-                                        Nach mehreren digital veröffentlichten
-                                        Tracks erscheint im Mai 2018 nun die
-                                        Debut-Single „sun" auf Vinyl.
-                                    </p>
-                                    <p>
-                                        Die überwiegend instrumentalen
-                                        Kompositionen von ago vereinen moderne
-                                        elektronische Musik wie Electronica, New
-                                        Wave oder Synth Pop mit Post-Rock und
-                                        Shoegaze sowie leichtem experimentellen
-                                        Krautrock-Einschlag.
-                                    </p>
-                                    <p>
-                                        Ein sphärisch-ruhiger Unterbau trägt die
-                                        sture Rhythmik der Beats in den Stücken,
-                                        die sich unentwegt weiter ausdehnen.
-                                        Gedeckt von treibenden Bässen und einem
-                                        melancholischen Gitarrensound ist ago's
-                                        Musik ein voranschreitender Prozess von
-                                        Dynamik, Tiefe und raumfüllendem Klang.
-                                    </p>
-                                </div>
-                                <div className="lang-en">
-                                    <p>
-                                        ago is a music project by Robin Wörn and
-                                        Manuel Minniti from Stuttgart, which has
-                                        been active since 2015. Live, the band
-                                        is regularly supplemented by guest
-                                        musicians.
-                                    </p>
-                                    <p>
-                                        After several digitally released tracks,
-                                        the debut single "sun" is now released
-                                        on vinyl in May 2018.
-                                    </p>
-                                    <p>
-                                        The predominantly instrumental
-                                        compositions of ago combine modern
-                                        electronic music such as Electronica,
-                                        New Wave or Synth Pop with Post-Rock and
-                                        Shoegaze as well as light experimental
-                                        Krautrock influences.
-                                    </p>
-                                    <p>
-                                        A spherical-calm foundation carries the
-                                        stubborn rhythm of the beats in the
-                                        pieces, which continuously expand.
-                                        Covered by driving basses and a
-                                        melancholic guitar sound, ago's music is
-                                        an advancing process of dynamics, depth
-                                        and space-filling sound.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div className="biography-content two-column-layout">
+                <div className="biography-image">
+                    <img src="/assets/images/ago_02_web.jpg" alt="ago band" />
                 </div>
-            </article>
+                <div className="biography-text">
+                    <div className="lang-de">
+                        <p>
+                            ago ist ein musikprojekt von robin wörn und manuel
+                            minniti aus stuttgart. die band wird bei
+                            live-auftritten von gastmusiker*innen ergänzt. nach
+                            der veröffentlichung ihrer debütsingle „sun" auf
+                            vinyl im mai 2018 spielten sie eine tour in israel
+                            mit der band D.R.Y.
+                        </p>
+                        <p>
+                            zusammen mit dem leadsänger Dmitry Polykov von
+                            D.R.Y. veröffentlichten sie im oktober 2019 die ep
+                            "blessed" auf einer 7" unter dem gleichnamigen
+                            projekt.
+                        </p>
+                        <p>
+                            ihr debütalbum "chroma" wurde am 23. juli 2021
+                            veröffentlicht, produziert von Ralv Milberg. kalte
+                            und dunkle klänge zentraleuropas kontrastieren mit
+                            nahöstlichen einflüssen. popkompositionen werden von
+                            verschiedenen sängern und treibenden rhythmen
+                            ergänzt. es besteht jedoch keine absicht, wie fertig
+                            produzierter mainstream-pop zu klingen.
+                        </p>
+                        <p>
+                            die kompositionen verbinden moderne elektronische
+                            musik wie electronica, new wave oder synth pop mit
+                            post rock, shoegaze und einem leichten
+                            krautrock-einfluss.
+                        </p>
+                    </div>
+                    <div className="lang-en">
+                        <p>
+                            ago is a music project by robin wörn and manuel
+                            minniti from stuttgart. the band is complemented by
+                            guest musicians during live performances. after
+                            releasing their debut single „sun“ on vinyl in may
+                            2018, they played a tour in israel with the local
+                            group D.R.Y.
+                        </p>
+                        <p>
+                            along with lead vocalist Dmitry Polykov of D.R.Y.
+                            they released the “blessed” ep on a 7” in october
+                            2019 under the same-titled project.
+                        </p>
+                        <p>
+                            their debut album “chroma” was released on july 23rd
+                            2021, produced by Ralv Milberg.
+                            <br />
+                            cold and dark sounds of central europe contrast
+                            middle-eastern influences. pop compositions are
+                            complemented by various vocalists and driving
+                            rhythms. however, there is no intention of sounding
+                            like off-the-shelf mainstream pop.
+                        </p>
+                        <p>
+                            the compositions combine modern electronic music
+                            like electronica, new wave or synth pop with post
+                            rock, shoegaze and a slight kraut rock-impact.
+                        </p>
+                    </div>
+                    {/* Bandcamp link */}
+                    <p>
+                        <a
+                            href="https://ago-band.bandcamp.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            bandcamp
+                        </a>
+                        <br />
+                        {/* Soundcloud link */}
+                        <a
+                            href="https://soundcloud.com/ago-music"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            soundcloud
+                        </a>
+                        <br />
+                        {/* Instagram link */}
+
+                        <a
+                            href="https://www.instagram.com/ago_band"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            instagram
+                        </a>
+                    </p>
+                </div>
+            </div>
         </>
     );
 }

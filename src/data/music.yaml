@@ -62,9 +62,13 @@ releases:
           en:
               description: |
                   falling (feat. [dmitry polykov](https://dontrepeatyourself.bandcamp.com/music)) is the first single of our debut album "chroma".
+              additionalInfo: |
+                  mixed and mastered at [milberg studios by ralv milberg](http://www.milbergstudios.de/) and maximilian heinrich.
           de:
               description: |
                   falling (feat. [dmitry polykov](https://dontrepeatyourself.bandcamp.com/music)) ist die erste Single unseres Debütalbums "chroma".
+              additionalInfo: |
+                  gemischt und gemastert bei [milberg studios von ralv milberg](http://www.milbergstudios.de/) und maximilian heinrich.
     - id: blessed
       year: 2019
       title: Blessed
@@ -75,6 +79,7 @@ releases:
           en:
               description: |
                   BLESSED is a music project by [Dmitry Polykov](https://www.facebook.com/dmitrypolykovofficial/) from Tel Aviv (known as singer in the israeli dark shamanic pop-band D.R.Y.) and Robin Wörn & Manuel Minniti of the synth wave-band ago from Stuttgart, Germany. After touring together in Israel, they did two short recording sessions at [Mazkeka Studios Jerusalem](https://www.mazkeka.com/studio) in February 2019. As a result they came up with three tracks, which were released on 22nd October 2019 on the experimental label [Raash Records](https://raashrecords.bandcamp.com/) from Jerusalem (raash, hebrew for „noise“). These three tracks, which are in english, russian and hebrew language, combine the engaging, calm and gloomy way of Polykovs voice with minimalistic, drifting rhythms and subtle synth-melodies of ago.
+
                   BLESSED comes out on 7“ light blue vinyl.
               buyLink:
                   text: "Buy at: raash records"
@@ -82,6 +87,7 @@ releases:
           de:
               description: |
                   BLESSED ist ein Musikprojekt von [Dmitry Polykov](https://www.facebook.com/dmitrypolykovofficial/) aus Tel Aviv (bekannt als Sänger der israelischen dark shamanic pop-band D.R.Y.) und Robin Wörn & Manuel Minniti von der Synth Wave-Band ago aus Stuttgart, Deutschland. Nach gemeinsamen Touren in Israel nahmen sie im Februar 2019 zwei kurze sessions in den [Mazkeka Studios Jerusalem](https://www.mazkeka.com/studio) auf. Als Ergebnis entstanden drei Tracks, die am 22. Oktober 2019 auf dem experimentellen Label [Raash Records](https://raashrecords.bandcamp.com/) aus Jerusalem veröffentlicht wurden (raash, hebräisch für „Lärm"). Diese drei Tracks, die in englischer, russischer und hebräischer Sprache sind, verbinden die mitreißende, ruhige und düstere Art von Polykovs Stimme mit minimalistischen, treibenden Rhythmen und subtilen Synth-Melodien von ago.
+
                   BLESSED erscheint auf 7" hellblauem Vinyl.
               buyLink:
                   text: "Kaufen bei: raash records"

@@ -51,12 +51,23 @@ function parseMarkdownLinks(text: string): React.ReactNode[] {
 function formatDescription(text: string): React.ReactNode {
     if (!text) return null;
 
-    const lines = text.split("\n").filter((line) => line.trim());
-    if (lines.length === 0) return null;
+    // Split by double newlines to get paragraphs
+    const paragraphs = text.split(/\n\n+/).filter((para) => para.trim());
+    if (paragraphs.length === 0) return null;
 
-    return lines.map((line, i) => {
-        const parsed = parseMarkdownLinks(line.trim());
-        return <p key={i}>{parsed}</p>;
+    return paragraphs.map((paragraph, i) => {
+        // Within each paragraph, split by single newlines and join with <br>
+        const lines = paragraph.split("\n").filter((line) => line.trim());
+        const content: React.ReactNode[] = [];
+
+        lines.forEach((line, lineIndex) => {
+            if (lineIndex > 0) {
+                content.push(<br key={`br-${lineIndex}`} />);
+            }
+            content.push(...parseMarkdownLinks(line.trim()));
+        });
+
+        return <p key={i}>{content}</p>;
     });
 }
 

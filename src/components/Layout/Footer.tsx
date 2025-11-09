@@ -8,11 +8,7 @@ export default function Footer() {
                 className="site-footer clearfix"
                 role="contentinfo"
             >
-                <div id="footer-text" className="site-info">
-                    <div className="ago__social-links">
-                        <SocialLinks />
-                    </div>
-                </div>
+                <SocialLinks />
             </footer>
         </div>
     );
