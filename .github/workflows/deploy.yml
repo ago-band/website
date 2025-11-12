@@ -35,7 +35,7 @@ jobs:
               env:
                   # Set base path for GitHub Pages
                   # Change to "/" when using a custom domain or username.github.io
-                  VITE_BASE_PATH: "/website/"
+                  VITE_BASE_PATH: "/"
 
             - name: Setup Pages
               uses: actions/configure-pages@v4
