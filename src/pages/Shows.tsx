@@ -125,6 +125,8 @@ export default function Shows() {
                                                             display: "flex",
                                                             flexDirection:
                                                                 "column",
+                                                            alignItems:
+                                                                "flex-start",
                                                         }}
                                                     >
                                                         {show.links

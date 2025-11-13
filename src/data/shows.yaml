@@ -4,14 +4,12 @@ shows:
       title: "chroma record release party pt II"
       links:
           facebook: "https://www.facebook.com/events/5091524927545553/"
-      status: "past"
 
     - date: "2021-07-24"
       venue: "Kultur Kiosk Stuttgart"
       title: "Chroma Release Party"
       links:
           facebook: "https://www.facebook.com/events/974310843359709/"
-      status: "cancelled"
 
     - date: "2021-07-17"
       venue: "ifa-Galerie, Stuttgart"
@@ -19,14 +17,12 @@ shows:
           - "Michael Fiedler & PPLC"
       links:
           organizer: "https://www.ifa.de/veranstaltung/konzert-des-musikprojekts-ago/"
-      status: "cancelled"
 
     - date: "2020-06-14"
       venue: "livestream performance, United We Stream"
       description: "presented by united we stream stuttgart & komma kultur esslingen & pop-büro region stuttgart."
       links:
           youtube: "https://www.youtube.com/watch?v=cw1uyqCVU1I"
-      status: "cancelled"
 
     - date: "2019-03-15"
       venue: "Komma Esslingen"
@@ -39,7 +35,6 @@ shows:
           - "and many others"
       links:
           facebook: "https://www.facebook.com/events/220403468638769/"
-      status: "cancelled"
 
     - date: "2019-01-26"
       venue: "Schalander, Kusel"
@@ -48,7 +43,6 @@ shows:
           - "A Futuristic Aid"
       links:
           facebook: "https://www.facebook.com/events/208639096716701/"
-      status: "cancelled"
 
     - date: "2018-11-14"
       venue: "Schocken, Stuttgart"
@@ -59,12 +53,10 @@ shows:
           - "Skkkrtcobain"
       links:
           facebook: "https://www.facebook.com/events/166123114339302"
-      status: "past"
 
     - date: "2019-01-24"
       venue: "AKK, Karlsruhe"
       description: "tba"
-      status: "past"
 
     - date: "2018-10-27"
       venue: "Schalander, Kusel"
@@ -110,7 +102,6 @@ shows:
           - "DJ Joerg Freitag"
       links:
           facebook: "https://www.facebook.com/events/303886193716418/"
-      status: "past"
 
     - date: "2018-06-01"
       venue: "Zimmer, Tel Aviv"
@@ -121,7 +112,6 @@ shows:
           - "shirtless dog"
       links:
           facebook: "https://www.facebook.com/events/174271793228158"
-      status: "past"
 
     - date: "2018-05-31"
       venue: "Taco Slash, Haifa"
@@ -130,7 +120,6 @@ shows:
           - "D.R.Y."
       links:
           facebook: "https://www.facebook.com/events/1818527891784645"
-      status: "past"
 
     - date: "2018-05-30"
       venue: "Mazkeka, Jerusalem"
@@ -139,7 +128,6 @@ shows:
           - "D.R.Y."
       links:
           facebook: "https://www.facebook.com/events/569673400079083"
-      status: "past"
 
     - date: "2018-05-29"
       venue: "Levontin7, Tel Aviv"
@@ -148,7 +136,6 @@ shows:
           - "D.R.Y."
       links:
           facebook: "https://www.facebook.com/events/1619419418176199"
-      status: "past"
 
     - date: "2017-11-15"
       venue: "KOMMA, Esslingen"
@@ -156,7 +143,6 @@ shows:
       links:
           tickets: "https://komma.reservix.de/p/reservix/group/242300"
           facebook: "https://www.facebook.com/events/1996925497220847"
-      status: "past"
 
     - date: "2017-07-15"
       venue: "KOMMA, Esslingen"
@@ -166,7 +152,6 @@ shows:
           - "Golden Diskó Ship"
           - "Marcus Korb"
           - "DJs: Ogeux Dangereux, Jörg Freitag, Fabian Brüssow, Julian Knoth, Jan Pinkert, Alexander Gallagher"
-      status: "past"
 
     - date: "2017-04-17"
       venue: "Pizzini, Bamberg"
@@ -175,7 +160,6 @@ shows:
           - "Fabian"
       links:
           facebook: "https://www.facebook.com/events/417355408638248/"
-      status: "past"
 
     - date: "2017-04-16"
       venue: "Schalander – Willkommen im Dschungel III (FESTIVAL), Kusel"
@@ -188,14 +172,12 @@ shows:
           - "Girls of Doom Lagoon"
       links:
           facebook: "https://www.facebook.com/events/513964542140542/"
-      status: "past"
 
     - date: "2017-04-15"
       venue: "Pfleghof, Tübingen"
       description: ""
       supportingActs:
           - "Württembergische Versicherungsgruppe"
-      status: "past"
 
     - date: "2017-04-14"
       venue: "Überraschung, Berlin"
@@ -206,7 +188,6 @@ shows:
       links:
           organizer: "http://strawalde.berlin/ueberraschung/"
           facebook: "https://www.facebook.com/events/1138399629619115/"
-      status: "past"
 
     - date: "2017-04-13"
       venue: "Dr. Seltsam, Leipzig"
@@ -216,7 +197,6 @@ shows:
       links:
           organizer: "http://seltsam-leipzig.com/?page_id=113"
           facebook: "https://www.facebook.com/events/1362492763794268/"
-      status: "past"
 
     - date: "2017-04-12"
       venue: "KKF, Schwäbisch Gmünd"
@@ -228,14 +208,12 @@ shows:
       links:
           organizer: "https://www.facebook.com/pg/kinokneipefabrik"
           facebook: "https://www.facebook.com/events/1284515964964395/"
-      status: "past"
 
     - date: "2016-04-30"
       venue: "Epplehaus, Tübingen"
       description: "Support für IMAGINARY WAR"
       links:
           facebook: "https://www.facebook.com/events/805585752902893/"
-      status: "past"
 
     - date: "2016-04-09"
       venue: "Schwerpunkt-Galerie, Stuttgart"
@@ -243,21 +221,18 @@ shows:
       description: "Künstlerische Portraitfotografien von Stefan Milev, Frank Bayh & Steff Rosenberger-Ochs, Lara Wernet und Matthes Schrof. Wir treten anschließend (ca. 21 Uhr) auf. EINTRITT FREI"
       links:
           facebook: "https://www.facebook.com/events/1266634953353778/"
-      status: "past"
 
     - date: "2016-04-08"
       venue: "Kino Kleine Fluchten in der Manufaktur"
       description: "mit Ehrenfried Kofferpaul"
       links:
           facebook: "https://www.facebook.com/events/1120579627953864/"
-      status: "past"
 
     - date: "2016-04-02"
       venue: "kulturnetzwerk blaues Haus"
       description: "mit: TBA"
       links:
           facebook: "https://www.facebook.com/events/1500711133571131/"
-      status: "past"
 
     - date: "2016-01-20"
       venue: "Kulturzentrum Merlin, Stuttgart"
@@ -265,21 +240,18 @@ shows:
       links:
           organizer: "http://www.merlinstuttgart.de/index.php?id=5&showuid=250&showdate=201601&cHash=3e14add9a3c6daf4e6144a41b5fc61d4"
           facebook: "https://www.facebook.com/events/921848861237646/"
-      status: "past"
 
     - date: "2015-12-11"
       venue: "Theater Rampe/Rakete, Stuttgart"
       description: "XTR Human (Release Party). Support von ago und Blood Vault"
       links:
           facebook: "https://www.facebook.com/events/886351151442209/"
-      status: "past"
 
     - date: "2015-11-14"
       venue: "kulturnetzwerk blaues haus"
       description: "Lange Nacht der Museen - Live Performance"
       links:
           facebook: "https://www.facebook.com/events/1074164519290598/"
-      status: "past"
 
     - date: "2015-09-28"
       venue: "KOMMA Kultur Esslingen"
@@ -287,4 +259,3 @@ shows:
       links:
           organizer: "http://www.komma.info/veranstaltung/lust-for-youth-support/"
           facebook: "https://www.facebook.com/events/1593261174288072/"
-      status: "past"
