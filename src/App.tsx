@@ -61,18 +61,24 @@ function AppContent() {
 
 function App() {
     // Handle base path for wouter
-    // In development, BASE_URL is "/", so we use "" (empty) for root
+    // In development or custom domain, BASE_URL is "/", so we don't set base (defaults to root)
     // In production with subdirectory, BASE_URL is "/website/", so we use "/website"
     const baseUrl = import.meta.env.BASE_URL;
-    const basePath = baseUrl === "/" ? "" : baseUrl.replace(/\/$/, "");
+    const basePath = baseUrl === "/" ? undefined : baseUrl.replace(/\/$/, "");
 
     return (
         <LanguageProvider>
             <NavigationProvider>
                 <div className="app">
-                    <Router base={basePath}>
-                        <AppContent />
-                    </Router>
+                    {basePath ? (
+                        <Router base={basePath}>
+                            <AppContent />
+                        </Router>
+                    ) : (
+                        <Router>
+                            <AppContent />
+                        </Router>
+                    )}
                 </div>
             </NavigationProvider>
         </LanguageProvider>
