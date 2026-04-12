@@ -189,6 +189,7 @@ body.home .language-switcher-header {
 body.home #content {
     max-height: calc(100svh - 12rem);
     padding-top: 2rem;
+    overflow-x: hidden;
     overflow-y: auto;
     top: 6rem;
 }
@@ -196,6 +197,7 @@ body.home #content {
 body.home.sidebar-visible #content {
     max-height: calc(100svh - 6rem);
     padding-top: 2rem;
+    overflow-x: hidden;
     overflow-y: auto;
     top: 6rem;
 }
