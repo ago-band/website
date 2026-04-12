@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "wouter";
 import { useLanguage } from "../contexts/LanguageContext";
 import RandomVisuals from "../components/RandomVisuals";
 import { loadHome, HomeLanguageContent } from "../utils/loadHome";
