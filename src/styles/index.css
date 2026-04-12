@@ -1,3 +1,10 @@
+/* Variables */
+:root {
+    --text-shadow: 0 1px 2px rgba(0, 0, 0, 0.54), 0 0px 4px rgba(0, 0, 0, 0.36);
+    --color-primary: #d50000; /* #d50000 */
+    --color-secondary: #fff;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -108,7 +115,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-    color: #d50000;
+    color: var(--color-primary);
     outline: 0;
 }
 
@@ -175,13 +182,35 @@ body.home * {
     color: #ffffff;
 }
 
+body.home .language-switcher-header {
+    text-shadow: var(--text-shadow);
+}
+
+body.home #content {
+    max-height: calc(100svh - 12rem);
+    padding-top: 2rem;
+    overflow: auto;
+    top: 6rem;
+}
+
+body.home.sidebar-visible #content {
+    max-height: calc(100svh - 6rem);
+    padding-top: 2rem;
+    overflow: auto;
+    top: 6rem;
+}
+
+body.home .main-content {
+    text-shadow: var(--text-shadow);
+}
+
 body.home .main-content a {
     color: #ffffff;
 }
 
 body.home a:hover,
 body.home a:active {
-    color: #d50000;
+    color: var(--color-primary);
 }
 
 /* Other pages - black text */
@@ -196,7 +225,7 @@ body:not(.home) .main-content a {
 
 body:not(.home) .main-content a:hover,
 body:not(.home) .main-content a:active {
-    color: #d50000;
+    color: var(--color-primary);
 }
 
 /* Header */
@@ -231,7 +260,7 @@ body.home .site-header .header-border-bottom {
 }
 
 body.sidebar-visible .site-header .header-border-bottom {
-    border-bottom-color: #d50000 !important;
+    border-bottom-color: var(--color-primary) !important;
 }
 
 .header-main {
@@ -276,7 +305,7 @@ body.home .site-title a {
 }
 
 body.sidebar-visible .site-title a {
-    color: #d50000 !important;
+    color: var(--color-primary) !important;
 }
 
 .site-title a:link,
@@ -295,7 +324,7 @@ body.home .site-title a:hover,
 body.home .site-title a:active,
 .site-title a:hover,
 .site-title a:active {
-    color: #d50000 !important;
+    color: var(--color-primary) !important;
     text-decoration: none;
 }
 
@@ -330,7 +359,7 @@ body.home #page-title {
 }
 
 body.sidebar-visible #page-title {
-    color: #d50000 !important;
+    color: var(--color-primary) !important;
 }
 
 /* Language Switcher in Header */
@@ -355,12 +384,12 @@ body.sidebar-visible #page-title {
 }
 
 .language-switcher-header button.active {
-    color: #d50000;
+    color: var(--color-primary);
 }
 
 .body.home .language-switcher-header button:hover,
 .language-switcher-header button:hover {
-    color: #d50000 !important;
+    color: var(--color-primary) !important;
 }
 
 .language-switcher-header span {
@@ -373,7 +402,7 @@ body.home .language-switcher-header button {
 }
 
 body.home .language-switcher-header button.active {
-    color: #d50000;
+    color: var(--color-primary);
 }
 
 body.sidebar-visible .language-switcher-header {
@@ -392,25 +421,25 @@ body.sidebar-visible .language-switcher-header {
     z-index: 100;
 }
 
-body.home .sidebar-navigation-toggle {
-    color: #ffffff;
-}
-
 body.sidebar-visible .sidebar-navigation-toggle {
-    color: #d50000 !important;
+    color: var(--color-primary);
 }
 
-.sidebar-navigation-toggle:hover,
-.sidebar-navigation-toggle:focus,
-.sidebar-navigation-toggle:active {
-    background: none;
-    color: #d50000;
+body.sidebar-visible .sidebar-navigation-toggle:hover {
+    color: var(--color-secondary);
 }
 
-body.home .sidebar-navigation-toggle:hover,
-body.home .sidebar-navigation-toggle:focus,
-body.home .sidebar-navigation-toggle:active {
-    color: #d50000;
+/* Hover/focus styles other pages */
+.sidebar-navigation-toggle:hover {
+    color: var(--color-primary);
+}
+
+body.home .sidebar-navigation-toggle:hover {
+    color: var(--color-primary);
+}
+
+body.home.sidebar-visible .sidebar-navigation-toggle:hover {
+    color: var(--color-secondary);
 }
 
 .sidebar-navigation-toggle.genericon {
@@ -509,7 +538,7 @@ body.home .sidebar-navigation-toggle:active {
 
 .widget_nav_menu ul li a,
 .sidebar-navigation-menu li a {
-    color: #d50000;
+    color: var(--color-primary);
     font-size: 56px;
     text-decoration: none;
     font-weight: bold;
@@ -521,8 +550,10 @@ body.home .sidebar-navigation-toggle:active {
 
 .widget_nav_menu ul li a:hover,
 .widget_nav_menu ul li a:active,
+.widget_nav_menu ul li a:focus,
 .sidebar-navigation-menu li a:hover,
 .sidebar-navigation-menu li a:active,
+.sidebar-navigation-menu li a:focus,
 .sidebar-navigation-menu li.current-menu-item a {
     color: #ffffff;
     transform: none;
@@ -554,7 +585,7 @@ body.home .sidebar-navigation-toggle:active {
     height: 6rem;
     left: 50%;
     max-width: 1280px;
-    padding: 0 2.5rem;
+    padding: 0 2.25rem;
     position: fixed;
     transform: translate(-50%, 0);
     width: 100%;
@@ -613,7 +644,7 @@ body.home #footer {
 
 .social-links a:hover svg,
 .social-links a:hover path {
-    fill: #d50000;
+    fill: var(--color-primary);
 }
 
 .social-links svg {

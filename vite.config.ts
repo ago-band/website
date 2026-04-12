@@ -11,6 +11,8 @@ const yamlFiles = [
     { src: "src/data/shows.yaml", dest: "public/shows.yaml" },
     { src: "src/data/language.yaml", dest: "public/language.yaml" },
     { src: "src/data/music.yaml", dest: "public/music.yaml" },
+    { src: "src/data/biography.yaml", dest: "public/biography.yaml" },
+    { src: "src/data/home.yaml", dest: "public/home.yaml" },
 ];
 
 function copyYamlFiles() {
