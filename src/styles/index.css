@@ -189,14 +189,14 @@ body.home .language-switcher-header {
 body.home #content {
     max-height: calc(100svh - 12rem);
     padding-top: 2rem;
-    overflow: auto;
+    overflow-y: auto;
     top: 6rem;
 }
 
 body.home.sidebar-visible #content {
     max-height: calc(100svh - 6rem);
     padding-top: 2rem;
-    overflow: auto;
+    overflow-y: auto;
     top: 6rem;
 }
 
