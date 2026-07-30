@@ -705,14 +705,15 @@ article {
     margin-bottom: 3rem;
 }
 
-article.closed {
-    /* opacity: 0.6; */
-    text-decoration: line-through;
+article.closed,
+article.cancelled {
+    opacity: 0.5;
+    /* text-decoration: line-through; */
 }
 
 article.cancelled {
     /* opacity: 0.5; */
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
 }
 
 article h2 {
