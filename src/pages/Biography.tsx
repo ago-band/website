@@ -5,6 +5,7 @@ import {
     loadBiography,
     BiographyLanguageContent,
 } from "../utils/loadBiography";
+import { renderMarkdownLinks } from "../utils/renderMarkdownLinks";
 
 export default function Biography() {
     const { language, languageData } = useLanguage();
@@ -41,14 +42,14 @@ export default function Biography() {
                             <div className="lang-de">
                                 {biography.languages.de.paragraphs.map(
                                     (p, i) => (
-                                        <p key={i}>{p}</p>
+                                        <p key={i}>{renderMarkdownLinks(p)}</p>
                                     ),
                                 )}
                             </div>
                             <div className="lang-en">
                                 {biography.languages.en.paragraphs.map(
                                     (p, i) => (
-                                        <p key={i}>{p}</p>
+                                        <p key={i}>{renderMarkdownLinks(p)}</p>
                                     ),
                                 )}
                             </div>

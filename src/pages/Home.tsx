@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../contexts/LanguageContext";
 import RandomVisuals from "../components/RandomVisuals";
 import { loadHome, HomeLanguageContent } from "../utils/loadHome";
+import { renderMarkdownLinks } from "../utils/renderMarkdownLinks";
 
 export default function Home() {
     const { language, languageData } = useLanguage();
@@ -40,7 +41,7 @@ export default function Home() {
                 <div className="lang-en">
                     {homeData &&
                         homeData.languages.en.paragraphs.map((p, i) => (
-                            <p key={i}>{p}</p>
+                            <p key={i}>{renderMarkdownLinks(p)}</p>
                         ))}
 
                     {/* <h2>our debut album "chroma" is out now!</h2>
@@ -55,7 +56,7 @@ export default function Home() {
                 <div className="lang-de">
                     {homeData &&
                         homeData.languages.de.paragraphs.map((p, i) => (
-                            <p key={i}>{p}</p>
+                            <p key={i}>{renderMarkdownLinks(p)}</p>
                         ))}
 
                     {/* <h2>unser debütalbum "chroma" ist jetzt erhältlich!</h2>

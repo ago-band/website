@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { loadShows } from "../utils/loadShows";
 import type { Show } from "../utils/loadShows";
+import { renderMarkdownLinks } from "../utils/renderMarkdownLinks";
 
 export default function Shows() {
     const { language, languageData } = useLanguage();
@@ -97,7 +98,9 @@ export default function Shows() {
                                                             .split("\n")
                                                             .map((line, i) => (
                                                                 <span key={i}>
-                                                                    {line}
+                                                                    {renderMarkdownLinks(
+                                                                        line,
+                                                                    )}
                                                                     <br />
                                                                 </span>
                                                             ))}
@@ -112,7 +115,10 @@ export default function Shows() {
                                                                     <span
                                                                         key={i}
                                                                     >
-                                                                        + {act}
+                                                                        +{" "}
+                                                                        {renderMarkdownLinks(
+                                                                            act,
+                                                                        )}
                                                                         <br />
                                                                     </span>
                                                                 )

@@ -1,51 +1,9 @@
 import { useLanguage } from "../contexts/LanguageContext";
 import type { Release } from "../utils/loadMusic";
+import { renderMarkdownLinks } from "../utils/renderMarkdownLinks";
 
 interface ReleaseProps {
     release: Release;
-}
-
-// Simple markdown-like link parser
-function parseMarkdownLinks(text: string): React.ReactNode[] {
-    if (!text) return [];
-
-    const parts: React.ReactNode[] = [];
-    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
-    let lastIndex = 0;
-    let match;
-    let key = 0;
-
-    while ((match = linkRegex.exec(text)) !== null) {
-        // Add text before the link
-        if (match.index > lastIndex) {
-            const beforeText = text.substring(lastIndex, match.index);
-            if (beforeText) {
-                parts.push(beforeText);
-            }
-        }
-        // Add the link
-        parts.push(
-            <a
-                key={key++}
-                href={match[2]}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                {match[1]}
-            </a>
-        );
-        lastIndex = match.index + match[0].length;
-    }
-
-    // Add remaining text
-    if (lastIndex < text.length) {
-        const remainingText = text.substring(lastIndex);
-        if (remainingText) {
-            parts.push(remainingText);
-        }
-    }
-
-    return parts.length > 0 ? parts : [text];
 }
 
 function formatDescription(text: string): React.ReactNode {
@@ -64,7 +22,7 @@ function formatDescription(text: string): React.ReactNode {
             if (lineIndex > 0) {
                 content.push(<br key={`br-${lineIndex}`} />);
             }
-            content.push(...parseMarkdownLinks(line.trim()));
+            content.push(...renderMarkdownLinks(line.trim()));
         });
 
         return <p key={i}>{content}</p>;
@@ -104,7 +62,7 @@ export default function Release({ release }: ReleaseProps) {
                     <div className="release-text">
                         {formatDescription(content.description)}
                         {content.additionalInfo && (
-                            <p>{parseMarkdownLinks(content.additionalInfo)}</p>
+                            <p>{renderMarkdownLinks(content.additionalInfo)}</p>
                         )}
                         {content.buyLink && (
                             <p>
