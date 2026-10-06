@@ -2,6 +2,8 @@ shows:
     - date: "2026-11-20"
       venue: "Komma Esslingen"
       title: ""
+      links:
+          tickets: "https://loveyourartist.com/de/profiles/komma-esslingen-XJMF5G/events/ago-esslingen-am-neckar-E645TSW"
 
     - date: "2022-02-12"
       venue: "Kultur Kiosk Stuttgart"

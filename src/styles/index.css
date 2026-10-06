@@ -739,6 +739,29 @@ article p:last-child {
     align-items: start;
 }
 
+/* Home: upcoming concerts */
+.upcoming-shows h2 {
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid currentColor;
+    margin-bottom: 2rem;
+}
+
+.upcoming-shows article {
+    margin-bottom: 1.5rem;
+}
+
+.upcoming-shows h3 {
+    margin-bottom: 0.25rem;
+}
+
+.upcoming-show-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 /* Biography */
 .biography-image {
     width: 100%;
