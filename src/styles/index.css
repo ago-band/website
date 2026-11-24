@@ -5,6 +5,53 @@
     --color-secondary: #fff;
 }
 
+/* Scrollbars: no track, thumb only visible while hovering the scroller */
+:root {
+    --scrollbar-size: 8px;
+    --scrollbar-thumb: rgba(0, 0, 0, 0.4);
+}
+
+:root:has(body.home),
+:root:has(body.sidebar-visible) {
+    --scrollbar-thumb: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+    height: var(--scrollbar-size);
+    background: transparent;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* The visible thumb color is toggled through a custom property on the
+   scroller itself: Chrome doesn't repaint scrollbars for a plain
+   `:hover::-webkit-scrollbar-thumb` rule, but it does on a style change. */
+* {
+    --scrollbar-thumb-current: transparent;
+}
+
+:root:hover,
+*:hover {
+    --scrollbar-thumb-current: var(--scrollbar-thumb);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-current);
+    border-radius: var(--scrollbar-size);
+}
+
+/* Firefox (no ::-webkit-scrollbar support) */
+@supports not selector(::-webkit-scrollbar) {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--scrollbar-thumb-current) transparent;
+    }
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -12,10 +59,10 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-    overflow: hidden;
+/* Scroll the document itself (not an inner container), so fixed header/footer
+   share the same containing width as the content when a scrollbar is shown */
+html {
+    overflow-y: scroll;
 }
 
 body {
@@ -128,9 +175,8 @@ li {
 
 /* App Layout */
 .app {
-    height: 100svh;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    min-height: 100svh;
+    overflow-x: clip;
 }
 
 #page {

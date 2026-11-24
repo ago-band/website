@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="upcoming-shows">
                     <h2>
                         <span className="lang-en">upcoming concerts</span>
-                        <span className="lang-de">kommende konzerte</span>
+                        <span className="lang-de">anstehende konzerte</span>
                     </h2>
                     {upcomingShows.length === 0 ? (
                         <p>
